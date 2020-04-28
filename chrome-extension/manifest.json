@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "AWS Form Dump",
-  "description": "Dump all AWS form field (including AWS custom select field) as JSON (`{\"name\": \"value\"}`) and copy",
+  "description": "Dump all AWS form field (including AWS custom select field) as JSON (`{\"name\": \"value\"}`) and copy.",
   "version": "0.0.1",
   "homepage_url": "https://github.com/huguesbr/aws-dump-form",
   "background": {
@@ -19,14 +19,11 @@
     "128": "icon128.png"
   },
   "permissions": [
-    "https://*/*",
-    "http://*/*",
-    "tabs"
+    "activeTab"
   ],
   "content_scripts": [
     {
-      "js": ["jquery.min.js"],
-      "matches": [ "http://*/*", "https://*/*"]
+      "js": ["jquery.min.js"]
     }
   ]
 }
